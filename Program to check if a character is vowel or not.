@@ -1,0 +1,15 @@
+/*Author :Navraj Khanal
+  Program:Program to check if a character is vowel or not.
+  Date   :1/4/2018  */
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+  char ch;
+  printf("Enter your character\n");
+  scanf("%c",&ch);
+    (ch=='a'||ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch==
+     'U')?printf("The entered character is vowel.\a"):printf("The entered character is consonant.\a ");
+  getch();
+}
