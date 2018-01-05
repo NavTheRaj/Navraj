@@ -1,0 +1,14 @@
+/*Author :Navraj Khanal
+  Program:Program to check if a given year is leap or not.
+  Date   :1/4/2018  */
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ int year;
+ printf("Enter your year.\n");
+ scanf("%d",&year);
+ (year%4==0 && year%100!=0)?printf("The entered year is leap year"):((year%400==0)?printf("The entered year is leap year"):printf("The entered year is not a leap year"));
+ getch();
+}
