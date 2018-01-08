@@ -1,0 +1,55 @@
+/*Author :Navraj Khanal
+  Program:Program to use switch case
+  Date   :1/8/2018  */
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+   int a,b,c,n;
+   char ch;
+   int ASCII;
+   printf("WELCOME TO THE CASES\n");
+   printf("1)ODD OR EVEN\n");//a
+   printf("2)POSITIVE OR NEGATIVE\n");//b
+   printf("3)ALPHABET OR NOT\n");//ch
+   printf("4)VOWEL OR NOT\n");//ch
+   printf("5)NO.IS DIVISIBLE BY 5 AND 11 OR NOT\n");//c
+   printf("ENTER YOUR CHOICE:");
+   scanf("%d",&n);
+   printf("ENTER YOUR NUMBER\n");
+   scanf("%d",&a);
+   printf("ENTER THE CHARACTER\n");
+   scanf("%c",&a);
+   switch(n)
+   {
+       case 1:printf("Enter a number\n");
+       scanf("%d",&a);
+       (a%2==0)?printf("The number is even"):printf("The number is odd");
+       break;
+
+       case 2:printf("Enter the number\n");
+       scanf("%d",&b);
+       (b>0)?printf("The number is positive"):printf("The number is negative");
+       break;
+
+       case 3:printf("Enter the character\n");
+       scanf("%c",&ch);
+       ((ASCII>=65 && ASCII<=90)||(ASCII>=97 && ASCII<=122))?printf("ALPHABET"):printf("NOT A ALPHABET");
+       break;
+
+       case 4: printf("Enter your character\n");
+       scanf("%c",&ch);
+       (ch=='a'||ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch==
+         'U')?printf("The entered character is vowel.\n"):printf("The entered character is consonant.\n");
+       break;
+
+       case 5: printf("Enter the number\n");
+       scanf("%d",&c);
+       (c%5==0 && c%11==0)?printf("Divisible by both"):printf("Not divisible by both");
+       break;
+
+       default:printf("INVALID CHOICE");
+
+   }
+   getch();
+}
