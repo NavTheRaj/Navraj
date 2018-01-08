@@ -1,0 +1,23 @@
+/*Author :NAVRAJ KHANAL
+   PROGRAM:TO USE OPERATORS.
+   DATE   :1/5/2018*/
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+ int a,b,SUM,SUB,MUL,DIV,MOD;
+ printf("Enter the a and b\n");
+ scanf("%d%d",&a,&b);
+ SUM=a+b;
+ SUB=a-b;
+ MUL=a*b;
+ DIV=a/b;
+ MOD=a%b;
+ printf("The sum is %d\n",SUM);
+ printf("The subtraction is %d\n",SUB);
+ printf("The MUL is %d\n",MUL);
+ printf("The MOD is %d\n",MOD);
+ getch();
+
+}
