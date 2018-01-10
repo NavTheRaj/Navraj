@@ -1,0 +1,17 @@
+/*Author :Navraj Khanal
+  Program:Program to print POKEMON 10 times
+  Date   :1/8/2018  */
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int i;
+    for(i=10;i>=1;i--)
+    {
+    printf("POKEMON\n");
+}
+    getch();
+    return(0);
+}
+
+
