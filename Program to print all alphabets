@@ -1,0 +1,19 @@
+/*Author :Navraj Khanal
+  Program:Program to print all alphabets
+  Date   :1/11/2018  */
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int i;
+    for(i=65;i<=90;i++)
+    {
+        printf("%c\n",i);
+    }
+    for(i=97;i<=122;i++)
+    {
+        printf("%c\n",i);
+    }
+    getch();
+    return(0);
+}
