@@ -1,0 +1,16 @@
+/*Author :Navraj Khanal
+  Program:Program to print sum of odd numbers from 500 to 1000
+  Date   :1/11/2018  */
+  #include<stdio.h>
+  #include<conio.h>
+  int main()
+  {
+  int i,sum;
+  for(i=501;i<1000;i=i+2)
+  {
+      sum=sum+i;
+  }
+     printf("The sum is %d",sum);
+     getch();
+     return(0);
+     }
