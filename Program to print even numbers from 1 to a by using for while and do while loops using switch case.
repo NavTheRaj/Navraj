@@ -1,0 +1,48 @@
+/*Author :Navraj Khanal
+  Program:Program to print even numbers from 1 to a by using for while and do while loops using switch case.
+  Date   :1/11/2018  */
+
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int i,n,a;
+printf("1)USE FOR LOOPS\n");
+printf("2)Use WHILE LOOPS\n");
+printf("3)USE DO..WHILE LOOPS\n");
+printf("Enter your choice\n");
+scanf("%d",&n);
+printf("Enter your limit number\n");
+scanf("%d",&a);printf("Enter your limit number\n");
+scanf("%d",&a)
+switch(n)
+{
+case 1:
+for(i=2;i<=a;i+=2)
+{
+printf("%d\n",i);
+}
+break;
+case 2:
+    i=2;
+    while(i<=a)
+    {
+        printf("%d\n",i);
+        i+=2;
+    }
+    break;
+
+case 3:
+    i=2;
+    do
+    {
+        printf("%d\n",i);
+        i+=2;
+    }while(i<=a);
+    break;
+    default:printf("Invalid choice");
+}
+    getch();
+    return(0);
+}
