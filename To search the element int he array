@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a[5],i,n,key,count=0;
+printf("Enter the size\n");
+scanf("%d",&n);
+printf("Enter the elements\n");
+for(i=0;i<5;i++)
+{
+    scanf("%d",&a[i]);
+}
+printf("Enter the key that you want to find\n");
+scanf("%d",&key);
+for(i=0;i<5;i++)
+{
+    if(key==a[i])
+    {
+    count++;
+    }
+}
+    if(count==1)
+    {
+
+    printf("Elements exits\n");
+}
+
+    else
+        {
+           printf("Element doesn't exist") ;
+        }
+
+    getch();
+}
+
+
