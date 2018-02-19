@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void fact()
+{
+    int a,n,i;
+    printf("Enter the number\n");
+    scanf("%d",&a);
+    printf("Enter the limit\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(a%i==0)
+        {
+            printf("%d\n",i);
+        }
+    }
+}
+int main()
+{
+fact();
+getch();
+
+}
