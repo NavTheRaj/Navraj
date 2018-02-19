@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<conio.h>
+float pi=3.14;
+void circle1()
+{
+    int r,D,C,A;
+    printf("Enter the radius\n");
+    scanf("%d",&r);
+    D=2*r;
+    C=2*pi*r;
+    A=pi*r*r;
+    printf("The diameter:%d\ncircumference:%f\n area of the circle:%f",D,C,A);
+}
+
+void circle2(int r)
+{
+    int D,C,A;
+
+    D=2*r;
+    C=2*pi*r;
+    A=pi*r*r;
+    printf("The diameter:%d\ncircumference:%d\n area of the circle:%f",D,C,A);
+
+}
+int circle3()
+{
+        int r,D,C,A;
+    printf("Enter the radius\n");
+    scanf("%d",&r);
+    D=2*r;
+    C=2*pi*r;
+    A=pi*r*r;
+    printf("The diameter:%d\ncircumference:%f\n",D,C);
+
+    return A ;
+
+}
+int circle4(int r)
+{
+      int D,C,A;
+
+     D=2*r;
+    C=2*pi*r;
+    A=pi*r*r;
+    printf("The diameter:%d\ncircumference:%f\n",D,C);
+    return A;
+
+
+}
+int main()
+{
+    printf("***************\n");
+    circle1();
+    printf("****************\n");
+    circle2(5);
+    printf("****************\n");
+    int x=circle3();
+    printf("The area  of the circle is %f",x);
+    printf("*********************\n");
+    int c=circle4(4);
+    printf("The area of the circle is %f",c);
+    return 0;
+
+}
+
+
