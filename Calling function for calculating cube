@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<conio.h>
+void cube1()
+{
+    int a,cube1;
+    printf("Enter the number\n");
+    scanf("%d",&a);
+    cube1=a*a*a;
+    printf("The cube of the number is %d",cube1);
+}
+
+void cube2(int a)
+{
+    int cube2;
+    cube2=a*a*a;
+    printf("****************\n");
+    printf("The cube of the number is %d",cube2);
+
+}
+int cube3()
+{
+     int a,cube3;
+    printf("Enter the number\n");
+    scanf("%d",&a);
+    cube3=a*a*a;
+    return cube3;
+
+}
+int cube4(int a)
+{
+      int cube3;
+
+    cube3=a*a*a;
+    return cube3;
+
+
+}
+int main()
+{
+    printf("***************\n");
+    cube1();
+    printf("****************\n");
+    cube2(5);
+    printf("****************\n");
+    int x=cube3();
+    printf("The cube of the number is %d",x);
+    printf("*********************\n");
+    int c=cube4(4);
+    printf("The cube of the number is %d",c);
+    return 0;
+
+}
+
+
