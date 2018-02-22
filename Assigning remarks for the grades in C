@@ -1,0 +1,31 @@
+/*AUTHOR:NAVRAJ KHANAL
+PROGRAM:TO ASSIGN THE REMARKS ACCORDING TO GRADE USING IF…ELSE CONDITION
+DATE:2/21/2018    */
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    char G,A,B,C;
+printf("Enter the grades as A,B and C in block letter\n");
+scanf("%c",&G);
+if(G=='A')
+{
+printf("Outstanding");
+}
+else  if(G=='B')
+{
+    printf("Good Achievement");
+}
+else if(G=='C')
+{
+    printf("Good TRy Harder");
+}
+else
+{
+    printf("In-Valid");
+}
+getch();
+return 0;
+}
+
