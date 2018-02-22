@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void arm()
+{
+    int n,i,temp1=0,temp2=0,digit=0,sum=0,count=0;
+    printf("Enter the number=>");
+    scanf("%d",&n);
+    temp1=n;
+    temp2=n;
+    for(;n>0;)
+    {
+        n=n/10;
+        count++;
+    }
+    for(;temp1>0;)
+    {
+        digit=temp1%10;
+        temp1=temp1/10;
+        sum=sum+pow(digit,count);
+    }
+    if(temp2==sum)
+    {
+        printf("It is an armstrong number");
+    }
+    else
+    {
+        printf("It is not armstrong number");
+    }
+}
+int main()
+{
+    arm();
+    getch();
+    return 0;
+}
