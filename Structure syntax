@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct stud
+{
+    int roll_no;
+    int Stud_id;
+    float per;
+}S;
+int main()
+{
+    printf("Enter the roll no=>");
+    scanf("%d",&S.roll_no);
+
+    printf("Enter the ID of the student=>");
+    scanf("%d",&S.Stud_id);
+
+    printf("Enter the percentage of the student=>");
+    scanf("%f",&S.per);
+    printf("The roll no of students %d\n",S.roll_no);
+     printf("The ID of the student is %d\n", S.Stud_id);
+    printf("The percentage of the student is %f\n",S.per);
+
+getch();
+return 0;
+}
